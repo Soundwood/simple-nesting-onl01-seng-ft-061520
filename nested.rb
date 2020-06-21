@@ -15,7 +15,7 @@ def hopper
           :languages => ["C"]
         }
      }
-
+  programmer_hash[:grace_hopper]
 
 end
 
@@ -37,6 +37,7 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+  programmer_hash.dig(:alan_kay, :known_for)
 end
 
 def dennis_ritchies_language
@@ -55,6 +56,8 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+  thing = programmer_hash.dig(:dennis_ritchie, :languages)
+  thing.join
 end
 
 def adding_matz
@@ -79,7 +82,7 @@ def adding_matz
           :languages => ["C"]
         }
      }
-
+programmer_hash[:yukihiro_matsumoto] = :known_for ,:languages
     
 end
 
